@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Biblio Manager Pro</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1> Biblio Manager Pro</h1>
+
+        <div class="form-container">
+            <input type="text"  placeholder="Titre du livre">
+            <input type="text"  placeholder="Auteur">
+
+            <select >
+                <option value="1">Science-Fiction</option>
+                <option value="2">Documentaire</option>
+                <option value="3">Roman</option>
+            </select>
+
+            <input type="text"  placeholder="ISBN">
+
+            <button >Enregistrer</button>
+        </div>
+        <div class="search-container">
+            <label for="searchInput">Recherche :</label>
+            <input type="text" placeholder="Rechercher un livre...">
+        </div>
+
+        <p ></p>
+
+        <h3>Inventaire (<span >0</span>)</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Num</th>
+                    <th>Info Livre</th>
+                    <th>Catégorie</th>
+                    <th>Détails</th>
+                    <th>Opt</th>
+                </tr>
+            </thead>
+            <tbody ></tbody>
+        </table>
+
+        <br>
+        <button>Réinitialiser</button>
+
+    </div>
+</body>
+</html>
