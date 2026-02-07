@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Encodage des caractères -->
     <meta charset="UTF-8" />
+
+    <!-- Titre de la page -->
     <title>Biblio Manager Pro</title>
+
+    <!-- Lien vers la feuille de style CSS -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+    <!-- Conteneur principal de l’application -->
     <div class="wrapper">
-        <h1> Biblio Manager Pro</h1>
 
+        <!-- Titre principal -->
+        <h1>Biblio Manager Pro</h1>
+
+        <!-- Formulaire d’ajout d’un livre -->
         <div class="form-container">
-            <input type="text"  placeholder="Titre du livre">
-            <input type="text"  placeholder="Auteur">
 
-            <select >
+            <!-- Champ titre du livre -->
+            <input type="text" placeholder="Titre du livre">
+
+            <!-- Champ auteur -->
+            <input type="text" placeholder="Auteur">
+
+            <!-- Sélection de la catégorie -->
+            <select>
                 <option value="1">Science-Fiction</option>
                 <option value="2">Documentaire</option>
                 <option value="3">Roman</option>
             </select>
 
-            <input type="text"  placeholder="ISBN">
+            <!-- Champ ISBN -->
+            <input type="text" placeholder="ISBN">
 
-            <button >Enregistrer</button>
+            <!-- Bouton d’enregistrement -->
+            <button>Enregistrer</button>
         </div>
+
+        <!-- Zone de recherche -->
         <div class="search-container">
             <label for="searchInput">Recherche :</label>
             <input type="text" placeholder="Rechercher un livre...">
         </div>
 
-        <p ></p>
+        <!-- Zone d’affichage des messages utilisateur -->
+        <p></p>
 
-        <h3>Inventaire (<span >0</span>)</h3>
+        <!-- Compteur du nombre de livres -->
+        <h3>Inventaire (<span>0</span>)</h3>
 
+        <!-- Tableau d’affichage des livres -->
         <table>
             <thead>
                 <tr>
@@ -43,12 +64,17 @@
                     <th>Opt</th>
                 </tr>
             </thead>
-            <tbody ></tbody>
+
+            <!-- Corps du tableau (rempli dynamiquement en JS) -->
+            <tbody></tbody>
         </table>
 
         <br>
+
+        <!-- Bouton de réinitialisation de la base -->
         <button>Réinitialiser</button>
 
     </div>
+
 </body>
 </html>
