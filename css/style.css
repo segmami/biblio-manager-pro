@@ -1,0 +1,74 @@
+body {
+    background: #333;
+    color: white;
+    font-family: 'Courier New';
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    background: #444;
+    padding: 20px;
+}
+
+.form-container input,
+.form-container select {
+    padding: 6px;
+    margin-right: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#saveButton {
+    background: blue;
+    color: white;
+    border: 0;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+#resetButton {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#resetButton:hover {
+    background: #ff85c1;
+}
+
+#message {
+    color: yellow;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+td, th {
+    border: 1px solid white;
+    padding: 8px;
+}
+
+/* Recherche */
+.search-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#searchInput {
+    background: #ffffcc;
+    padding: 6px;
+    border: none;
+    width: 250px;
+}
