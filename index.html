@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Encodage des caractères pour les accents -->
     <meta charset="UTF-8" />
+
+    <!-- Titre affiché dans l’onglet du navigateur -->
     <title>Biblio Manager Pro</title>
+
+    <!-- Feuille de style principale -->
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
+    <!-- Conteneur principal de l’application -->
     <div class="wrapper">
-        <h1> Biblio Manager Pro</h1>
 
+        <!-- Titre de l’application -->
+        <h1>📚 Biblio Manager Pro</h1>
+
+        <!-- Formulaire d’ajout d’un livre -->
         <div class="form-container">
-            <input type="text"  placeholder="Titre du livre">
-            <input type="text"  placeholder="Auteur">
 
-            <select >
+            <!-- Champ : titre du livre -->
+            <input type="text" id="titleInput" placeholder="Titre du livre">
+
+            <!-- Champ : auteur -->
+            <input type="text" id="authorInput" placeholder="Auteur">
+
+            <!-- Sélection de la catégorie du livre -->
+            <select id="categorySelect">
                 <option value="1">Science-Fiction</option>
                 <option value="2">Documentaire</option>
                 <option value="3">Roman</option>
             </select>
 
-            <input type="text"  placeholder="ISBN">
+            <!-- Champ : ISBN -->
+            <input type="text" id="isbnInput" placeholder="ISBN">
 
-            <button >Enregistrer</button>
+            <!-- Bouton d’enregistrement -->
+            <button id="saveButton">Enregistrer</button>
         </div>
+
+        <!-- Zone de recherche des livres -->
         <div class="search-container">
             <label for="searchInput">Recherche :</label>
-            <input type="text" placeholder="Rechercher un livre...">
+            <input type="text" id="searchInput" placeholder="Rechercher un livre...">
         </div>
 
-        <p ></p>
+        <!-- Zone d’affichage des messages (erreurs / succès) -->
+        <p id="message"></p>
 
-        <h3>Inventaire (<span >0</span>)</h3>
+        <!-- Compteur du nombre de livres affichés -->
+        <h3>Inventaire (<span id="counter">0</span>)</h3>
 
+        <!-- Tableau listant les livres -->
         <table>
             <thead>
                 <tr>
@@ -43,12 +64,19 @@
                     <th>Opt</th>
                 </tr>
             </thead>
-            <tbody ></tbody>
+
+            <!-- Corps du tableau (rempli dynamiquement par JavaScript) -->
+            <tbody id="tableBody"></tbody>
         </table>
 
         <br>
-        <button>Réinitialiser</button>
+
+        <!-- Bouton de réinitialisation de la base de données -->
+        <button id="resetButton">Réinitialiser</button>
 
     </div>
+
+    <!-- Script JavaScript principal -->
+    <script src="js/app.js"></script>
 </body>
 </html>
