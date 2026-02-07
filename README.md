@@ -53,6 +53,10 @@ Voici quelques captures de l’application :
 ├── accueil.jpg
 └── recherche.jpg
 
+## Standards de développement
+Les règles de nommage, de sécurité et de qualité du code sont décrites dans le fichier
+[STANDARDS.md](STANDARDS.md).
+
 ## Répartition du travail
 - **Asmaa** : HTML, CSS, documentation, captures d’écran, revue des Pull Requests
 - **Collègue** : JavaScript, logique applicative, revue des Pull Requests
