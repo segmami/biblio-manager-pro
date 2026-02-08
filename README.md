@@ -38,6 +38,9 @@ Voici quelques captures de l’application :
 ![Page principale](assets/accueil.jpg)  
 ![Recherche de livres](assets/recherche.jpg)
 
+## Démo
+https://segmami.github.io/biblio-manager-pro/
+
 ## Architecture du projet
   biblio-manager-pro
 │── index.html
