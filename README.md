@@ -59,7 +59,7 @@ Les règles de nommage, de sécurité et de qualité du code sont décrites dans
 
 ## Répartition du travail
 - **Asmaa** : HTML, CSS, documentation, captures d’écran, revue des Pull Requests
-- **Collègue** : JavaScript, logique applicative, revue des Pull Requests
+- **Amin** : JavaScript, logique applicative, revue des Pull Requests
 
 ## Comment exécuter le projet
 1. Cloner le dépôt GitHub
